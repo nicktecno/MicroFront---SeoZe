@@ -1,0 +1,26 @@
+{
+  "name": "shop-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -- -p 3000",
+    "build": "next build && next export",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@module-federation/nextjs-mf": "^6.0.1",
+    "algoliasearch": "^4.14.3",
+    "axios": "^1.2.2",
+    "next": "^13.1.1",
+    "next-images": "^1.8.4",
+    "qs": "^6.11.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-instantsearch-dom": "^6.38.1",
+    "react-toastify": "^9.1.1",
+    "styled-components": "^5.3.6",
+    "styled-media-query": "^2.1.2",
+    "webpack": "^5.75.0"
+  }
+}
