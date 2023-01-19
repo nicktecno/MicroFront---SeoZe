@@ -41,7 +41,7 @@ const nextConfig = {
       new NextFederationPlugin({
         name: "shop",
         remotes: {
-          layout: `layout@http://localhost:3001/_next/static/${
+          layout: `layout@https://micro-front-layout.vercel.app/_next/static/${
             isServer ? "ssr" : "chunks"
           }/remoteEntry.js`,
           homePage: `homePage@http://micro-front-home.vercel.app/_next/static/${
