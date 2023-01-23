@@ -1,8 +1,8 @@
 import React, { useContext, useEffect } from "react";
 import dynamic from "next/dynamic";
 
-const HeaderMicro = dynamic(() => import("layout/header"));
-const FooterMicro = dynamic(() => import("layout/footer"));
+const HeaderMicro = dynamic(() => import("layout/header"), { ssr: false });
+const FooterMicro = dynamic(() => import("layout/footer"), { ssr: false });
 
 import { defaultLayout } from "../../jover.json";
 
