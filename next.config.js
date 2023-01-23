@@ -44,7 +44,7 @@ const nextConfig = {
           layout: `layout@https://micro-front-layout.vercel.app/_next/static/${
             isServer ? "ssr" : "chunks"
           }/remoteEntry.js`,
-          homePage: `homePage@http://micro-front-home.vercel.app/_next/static/${
+          homePage: `homePage@https://micro-front-home.vercel.app/_next/static/${
             isServer ? "ssr" : "chunks"
           }/remoteEntry.js`,
           loginPage: `loginPage@https://micro-front-login.vercel.app/_next/static/${
