@@ -53,6 +53,9 @@ const nextConfig = {
           profilePage: `profilePage@https://micro-front-profile.vercel.app/_next/static/${
             isServer ? "ssr" : "chunks"
           }/remoteEntry.js`,
+          profileAddressesPage: `profileAddressesPage@https://micro-front-profile-addresses.vercel.app/_next/static/${
+            isServer ? "ssr" : "chunks"
+          }/remoteEntry.js`,
         },
         filename: "static/chunks/remoteEntry.js",
         exposes: {},
