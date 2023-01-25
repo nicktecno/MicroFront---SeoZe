@@ -59,7 +59,12 @@ const nextConfig = {
           addPaymentMethodPage: `addPaymentMethodPage@https://micro-front-add-payment-method.vercel.app//_next/static/${
             isServer ? "ssr" : "chunks"
           }/remoteEntry.js`,
+
+          orders: `orders@https://micro-front-orders.vercel.app///_next/static/${
+            isServer ? "ssr" : "chunks"
+          }/remoteEntry.js`,
         },
+
         filename: "static/chunks/remoteEntry.js",
         exposes: {},
         shared: {},
