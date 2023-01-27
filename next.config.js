@@ -60,7 +60,10 @@ const nextConfig = {
             isServer ? "ssr" : "chunks"
           }/remoteEntry.js`,
 
-          orders: `orders@https://micro-front-orders.vercel.app///_next/static/${
+          orders: `orders@https://micro-front-orders.vercel.app//_next/static/${
+            isServer ? "ssr" : "chunks"
+          }/remoteEntry.js`,
+          photobookPage: `photobookPage@https://micro-front-photobook.vercel.app//_next/static/${
             isServer ? "ssr" : "chunks"
           }/remoteEntry.js`,
         },
