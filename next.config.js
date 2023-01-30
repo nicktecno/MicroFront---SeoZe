@@ -72,6 +72,9 @@ const nextConfig = {
           likesPage: `likesPage@https://micro-front-likes.vercel.app//_next/static/${
             isServer ? "ssr" : "chunks"
           }/remoteEntry.js`,
+          registerPage: `registerPage@https://micro-front-register.vercel.app//_next/static/${
+            isServer ? "ssr" : "chunks"
+          }/remoteEntry.js`,
         },
 
         filename: "static/chunks/remoteEntry.js",
