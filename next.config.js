@@ -66,6 +66,9 @@ const nextConfig = {
           photobookPage: `photobookPage@https://micro-front-photobook.vercel.app//_next/static/${
             isServer ? "ssr" : "chunks"
           }/remoteEntry.js`,
+          wishlist: `wishlist@https://micro-front-wishlist.vercel.app//_next/static/${
+            isServer ? "ssr" : "chunks"
+          }/remoteEntry.js`,
         },
 
         filename: "static/chunks/remoteEntry.js",
