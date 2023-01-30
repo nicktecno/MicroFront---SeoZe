@@ -69,6 +69,9 @@ const nextConfig = {
           wishlist: `wishlist@https://micro-front-wishlist.vercel.app//_next/static/${
             isServer ? "ssr" : "chunks"
           }/remoteEntry.js`,
+          likesPage: `likesPage@https://micro-front-likes.vercel.app//_next/static/${
+            isServer ? "ssr" : "chunks"
+          }/remoteEntry.js`,
         },
 
         filename: "static/chunks/remoteEntry.js",
