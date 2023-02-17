@@ -81,6 +81,12 @@ const nextConfig = {
           findPromotersPage: `findPromotersPage@https://micro-front-find-promoters.vercel.app//_next/static/${
             isServer ? "ssr" : "chunks"
           }/remoteEntry.js`,
+          profilePublicPromoterPage: `profilePublicPromoterPage@https://profile-public-promoter.vercel.app//_next/static/${
+            isServer ? "ssr" : "chunks"
+          }/remoteEntry.js`,
+          publiclistPage: `publiclistPage@https://micro-front-publiclist.vercel.app//_next/static/${
+            isServer ? "ssr" : "chunks"
+          }/remoteEntry.js`,
         },
 
         filename: "static/chunks/remoteEntry.js",

@@ -4,7 +4,7 @@ import dynamic from "next/dynamic";
 const HeaderMicro = dynamic(() => import("layout/header"), { ssr: false });
 const FooterMicro = dynamic(() => import("layout/footer"), { ssr: false });
 
-import { defaultLayout } from "../../jover.json";
+import defaultLayout from "../../jover";
 
 import GlobalStyles from "../../styles/globals";
 
