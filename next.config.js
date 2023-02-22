@@ -87,6 +87,9 @@ const nextConfig = {
           publiclistPage: `publiclistPage@https://micro-front-publiclist.vercel.app//_next/static/${
             isServer ? "ssr" : "chunks"
           }/remoteEntry.js`,
+          publicPhotobookPage: `publicPhotobookPage@https://micro-front-public-photobook.vercel.app//_next/static/${
+            isServer ? "ssr" : "chunks"
+          }/remoteEntry.js`,
         },
 
         filename: "static/chunks/remoteEntry.js",
