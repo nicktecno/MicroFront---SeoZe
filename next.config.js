@@ -90,6 +90,15 @@ const nextConfig = {
           publicPhotobookPage: `publicPhotobookPage@https://micro-front-public-photobook.vercel.app//_next/static/${
             isServer ? "ssr" : "chunks"
           }/remoteEntry.js`,
+          campaignPage: `campaignPage@https://micro-front-campaign.vercel.app//_next/static/${
+            isServer ? "ssr" : "chunks"
+          }/remoteEntry.js`,
+          generalProductCards: `generalProductCards@https://micro-front-search-k5g1.vercel.app//_next/static/${
+            isServer ? "ssr" : "chunks"
+          }/remoteEntry.js`,
+          searchPage: `searchPage@https://micro-front-search.vercel.app//_next/static/${
+            isServer ? "ssr" : "chunks"
+          }/remoteEntry.js`,
         },
 
         filename: "static/chunks/remoteEntry.js",
