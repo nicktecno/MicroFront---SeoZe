@@ -1,14 +1,14 @@
-import "react-toastify/dist/ReactToastify.min.css";
-import { useLang } from "../../Context/LangContext";
-
-import apiUnlogged from "../../services/apiUnlogged";
-
 import dynamic from "next/dynamic";
+
 const SearchMicro = dynamic(() => import("searchPage/searchPage"), {
   ssr: false,
 });
 
-export default function Search(props) {
+import { useLang } from "../../Context/LangContext";
+
+import apiUnlogged from "../../services/apiUnlogged";
+
+export default function SearchPage() {
   const { routeTranslations } = useLang();
   const appAlgoliaIndexSearch =
     process.env.NEXT_PUBLIC_REACT_APP_ALGOLIA_INDEX_SEARCH;
@@ -21,18 +21,10 @@ export default function Search(props) {
       apiUnlogged={apiUnlogged}
       routeTranslations={routeTranslations}
       appAlgoliaIndexSearch={appAlgoliaIndexSearch}
-      ssrData={props}
       mktName={mktName}
       appImagesUrl={appImagesUrl}
       companyId={companyId}
+      term={""}
     />
   );
-}
-
-export async function getServerSideProps({ resolvedUrl }) {
-  return {
-    props: {
-      resolvedUrl,
-    },
-  };
 }
