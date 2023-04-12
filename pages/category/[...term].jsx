@@ -8,7 +8,7 @@
 
 // import apiUnlogged from "../../services/apiUnlogged";
 
-export default function CategoryPage() {
+export default function CategoriesPage() {
   <></>;
   // const { routeTranslations } = useLang();
   // const appAlgoliaIndexSearch =
