@@ -96,7 +96,7 @@ const nextConfig = {
           generalProductCards: `generalProductCards@https://micro-front-search-k5g1.vercel.app//_next/static/${
             isServer ? "ssr" : "chunks"
           }/remoteEntry.js`,
-          searchPage: `searchPage@http://localhost:3017//_next/static/${
+          searchPage: `searchPage@https://micro-front-search.vercel.app//_next/static/${
             isServer ? "ssr" : "chunks"
           }/remoteEntry.js`,
         },
