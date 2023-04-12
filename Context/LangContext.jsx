@@ -71,6 +71,10 @@ export const LangProvider = (props) => {
   useEffect(() => {
     const routeEdit = router.pathname.includes("campaign")
       ? "campaign"
+      : router.pathname.includes("/search") ||
+        router.pathname.includes("/category") ||
+        router.pathname.includes("seemore")
+      ? "search"
       : router.pathname.replace("/profile/", "").replace("/", "");
 
     if (filterLang !== false) {

@@ -24,7 +24,6 @@ export default function SearchPage() {
       mktName={mktName}
       appImagesUrl={appImagesUrl}
       companyId={companyId}
-      term={""}
     />
   );
 }
